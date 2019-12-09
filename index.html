@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <script type="text/javascript" src="webfont.js"></script>
+
+        <script type="text/javascript" src="fwb.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="fwb.css">
+
+        <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    </head>
+    <body>
+        <div class="fwb">
+            <fieldset>
+                <fieldset>
+                    <legend>
+                        Options
+                    </legend>
+                    <div style="text-align: right;">
+                        <div style="text-align: left;">
+                            <label for="input_font_name">Font name:</label>
+                            <input id="input_font_name" type="text" value="Roboto Mono" style="width: 160px">
+                            <a href="#">load font</a>
+                            <p id="font_load" style="color: green; font-weight: bold; display: none">
+                                loading font...
+                            </p>
+                            <p id="font_load_error" style="color: red; font-weight: bold;">
+                                
+                            </p>
+                        </div>
+                        <div style="text-align: left;">
+                            <label for="style-select">Style:</label>
+                            <select name="style" id="style-select">
+                                <option value="normal">normal</option>
+                                <option value="italic">italic</option>
+                                <option value="oblique">oblique</option>
+                            </select>
+                        </div>
+                        <div style="text-align: left;">
+                            <label for="weight-select">Weight:</label>
+                            <select name="weight" id="weight-select">
+                                <option value="normal">normal</option>
+                                <option value="bold">bold</option>
+                                <option value="bolder">bolder</option>
+                                <option value="lighter">lighter</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="600">600</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                            </select>
+                        </div>
+                        <div style="text-align: left;">
+                            <label for="variant-select">Variant:</label>
+                            <select name="variant" id="variant-select">
+                                <option value="normal">normal</option>
+                                <option value="small-caps">small-caps</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="input_image_width">Image width (px):</label>
+                            <input id="input_image_width" type="number" value="256">
+                        </div>
+                        <p>
+                            Note : Image width should be a multiple of the glyph size
+                        </p>
+                        <div>
+                            <label for="input_glyph_size">Glyph size (px):</label>
+                            <input id="input_glyph_size" type="number" value="16">
+                        </div>
+                        <div>
+                            <label for="input_glyph_size_offset">Glyph size offset (px):</label>
+                            <input id="input_glyph_size_offset" type="number" value="-1">
+                        </div>
+<!--
+                        <div>
+                            <label for="input_glyph_vert_offset">Vert. glyph offset (px):</label>
+                            <input id="input_glyph_vert_offset" type="number" value="3">
+                        </div>
+-->
+                    </div>
+                </fieldset>
+                <div style="text-align: center; padding: 8px;">
+                    <span id="font-sample">
+                        ...input font sample text...
+                    </span>
+<!--
+                    <svg id="font-sample-baseline">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:1"></line>
+                    </svg>
+--> 
+                </div>
+                <legend id="font_legend"></legend>
+                <div class="center">
+                    <canvas id="main_canvas"></canvas>
+                    <canvas id="test_canvas"></canvas>
+                </div>
+                <button id="download_font" class="btn">
+                    <i class="fa fa-download"></i> Download
+                </button>
+            </fieldset>
+        </div>
+        <div class="footer">
+            <p>
+                Simple ASCII bitmap/raster font tool compatible with the <a href="https://github.com/grz0zrg/fbg">fbg</a> library.
+            </p>
+            source-code available <a href="https://github.com/grz0zrg/monoBitmapFontCreator">here</a>
+            <br><br>
+            web fonts from <a href="https://fonts.google.com/?category=Monospace">Google Fonts</a> & <a href="https://edgewebfonts.adobe.com/fonts#/?class=monospaced">Adobe Edge Web Fonts</a>
+            <br><br>
+            by <a href="https://github.com/grz0zrg">Julien Verneuil</a> - 9/12/2019
+        </div>
+    </body>
+</html>

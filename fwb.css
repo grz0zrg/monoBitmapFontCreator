@@ -1,0 +1,77 @@
+body {
+    font-family: monospace;
+}
+
+p {
+    font-size: 11px;
+}
+
+#main_canvas {
+    display: block;
+
+    border: solid 8px black;
+}
+
+#test_canvas {
+    display: block;
+
+    border-top: solid 1px white;
+    border-left: solid 8px black;
+    border-right: solid 8px black;
+}
+
+#font-sample {
+    
+}
+
+#font-sample-baseline {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    height: 1px;
+    right: 0;
+}
+
+.fwb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    display: block;
+
+    width: 100%;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+input {
+    width: 64px;
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+
+    margin-top: 8px;
+}
